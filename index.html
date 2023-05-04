@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="number.css">
+        <title>Number Puzzle Game</title>
+    </head>
+    <body>
+        <script src="number.js"></script>
+        <div class="section">
+       <div>
+           <h1>Number Puzzle</h1>
+           <input class="input box" type="text" pattern"\d*" maxLength="1" value="0" onblur="checkSums()">
+           <input class="input box" type="text" pattern"\d*" maxLength="1" value="0" onblur="checkSums()">
+           <input class="input box" type="text" pattern"\d*" maxLength="1" value="0" onblur="checkSums()">
+           <input class="output box row" value="0" disabled>
+       </div> 
+       <div>
+           <input class="input box" type="text" pattern"\d*" maxLength="1" value="0" onblur="checkSums()">
+           <input class="input box" type="text" pattern"\d*" maxLength="1" value="0" onblur="checkSums()">
+           <input class="input box" type="text" pattern"\d*" maxLength="1" value="0" onblur="checkSums()">
+           <input class="output box row" value="0" disabled>
+       </div> 
+       <div>
+           <input class="input box" type="text" pattern"\d*" maxLength="1" value="0" onblur="checkSums()">
+           <input class="input box" type="text" pattern"\d*" maxLength="1" value="0" onblur="checkSums()">
+           <input class="input box" type="text" pattern"\d*" maxLength="1" value="0" onblur="checkSums()">
+           <input class="output box row" value="0" disabled>
+       </div> 
+       <div class="outputs">       
+           <input class="output box col" value="0" disabled>
+           <input class="output box col" value="0" disabled>
+           <input class="output box col" value="0" disabled>
+           <button class="random box col row" onClick="random()">R</button>
+       </div>
+       <div>
+           <button class="submit box" onClick="submit()">Submit</button>
+       </div>
+       <div>
+           <button class="w2 box" onClick="help()">Help</button>
+           <button class="box w2" onclick="clearBoxes()">Clear</button>
+       </div>
+       <div>
+           <input class="notes" value=" -Numbers allowed: 1-9" disabled>
+       </div>
+       <div>
+           <input class="notes" value=" -Sums must all be 15" disabled>
+       </div>
+       <div>
+           <button class="copyright" onClick="copyright()"><marquee>Made by <span class="link">Danidre</span> (2014-2018)</marquee></button> 
+       </div>
+        </div>
+    </body>
+</html>
